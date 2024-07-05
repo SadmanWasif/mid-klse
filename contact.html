@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - My Online Store</title>
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+
     <header>
-        <h1>Contact Us</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="product.html">Products</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="contact">
+        <h1>Contact Us</h1>
+        <section class="contact-info">
+            <p>Email: klase@gmail.com</p>
+            <p>Phone: 01580617453</p>
+            <p>Address: Aftabnagar, Dhaka, Bangladesh</p>
+        </section>
+        <section class="contact-form">
             <h2>Get in Touch</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" required></textarea><br>
-                <input type="submit" value="Submit">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 My Online Store. All rights reserved.</p>
+        <p>&copy; 2024 Your Store. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
